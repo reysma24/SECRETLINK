@@ -839,8 +839,8 @@ async def on_shutdown(app):
 
 # Inisialisasi app dengan webhook
 WEBHOOK_PATH = '/webhook'
-WEBHOOK_URL = f"https://<your_koyeb_service>.koyeb.app{WEBHOOK_PATH}"
-
+WEBHOOK_URL = f"https://mammoth-shaylynn-reyma24-928aa8cf.koyeb.app{WEBHOOK_PATH}"
+#.koyeb.app/
 app = get_new_configured_app(dispatcher=dp, path=WEBHOOK_PATH)
 app.on_startup.append(on_startup)
 app.on_shutdown.append(on_shutdown)
